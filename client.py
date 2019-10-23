@@ -236,13 +236,12 @@ class Match(tk.Tk):
         FGCOLOUR = theme.get('L_FRAME_COLOUR')
         BUTTON_COLOUR = theme.get('BUTTON_COLOUR')
         DISABLED_COLOUR = theme.get('DISABLED_COLOUR')
-        theme_button.configure(fg = FGCOLOUR)
 
         def redraw_window():
             """Redraw main window colours"""
             window.configure(bg = BGCOLOUR)
             main_frame.configure(bg = BGCOLOUR, fg = FGCOLOUR)
-            theme_button.configure(bg = BGCOLOUR)
+            theme_button.configure(bg = BGCOLOUR, fg = FGCOLOUR)
             return
         
         def redraw_labels():

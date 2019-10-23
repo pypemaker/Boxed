@@ -235,7 +235,8 @@ class Match(tk.Tk):
         BGCOLOUR = theme.get('BGCOLOUR')
         FGCOLOUR = theme.get('L_FRAME_COLOUR')
         BUTTON_COLOUR = theme.get('BUTTON_COLOUR')
-        DISABLED_COLOUR = theme.get('DISABLED_COLOUR') 
+        DISABLED_COLOUR = theme.get('DISABLED_COLOUR')
+        theme_button.configure(fg = FGCOLOUR)
 
         def redraw_window():
             """Redraw main window colours"""

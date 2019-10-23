@@ -11,19 +11,19 @@ logic best be moved to the server, but as a POC this is more than enough.
 Note: the maximum number of players is directly tied to the number of
 colours available in the Player class list. Also, server and client
 need to be update manually a function has not been implemented for that yet.
-Nor is there any off-board GUI support for len(players) > 2,
+Nor is there any off-board GUI support for len(players) greater than two,
 mainly labels placement.
 
 Regarding Connectivity:
 Socket capabilities have been added in retrospect.
-Auto re-join is not supported in case of a dissconect, and timeout
+Auto re-join is not supported in case of a disconnect, and timeout
 is virtually none. Server and client changes need to take place
 for that to happen.
 
 Server robustness:
-The server as it stands is not sufficient in handeling temporary
+The server as it stands is not sufficient in handling temporary
 issues with connectivity. Doesn't resume sessions.
-Client handel management can be improved.
+Client handle management can be improved.
 
 Client design:
 The client side leaves dormant threads under specific circumstances,

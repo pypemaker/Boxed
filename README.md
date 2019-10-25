@@ -1,6 +1,8 @@
 # Boxed
 Two-Player Python implementation of the Dots and Boxes game.
 
+ - Dots and Boxes Wikipedia Page: https://en.wikipedia.org/wiki/Dots_and_Boxes
+
 ## Proof of concept - not final ##
 
 

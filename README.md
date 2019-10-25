@@ -7,12 +7,12 @@ Two-Player Python implementation of the Dots and Boxes game.
 Regarding TOTAL_PLAYERS:
 Maximum amount of players is theoretically limitless,
 though sync issues have been observed around five or more players.
-logic best be moved to the server, but as a POC this is more than enough.
+Logic best be moved to the server, but as a POC this is more than enough.
 Note: the maximum number of players is directly tied to the number of
-colours available in the Player class list. Also, server and client
-need to be update manually a function has not been implemented for that yet.
-Nor is there any off-board GUI support for len(players) greater than two,
-mainly labels placement.
+colours available in the Player class 'P_COLOURS' list.
+Also, server and client need to be update manually, a function has not
+been implemented for that yet. Nor is there any off-board GUI support
+for len(players) greater than two, mainly labels placement.
 
 Regarding Connectivity:
 Socket capabilities have been added in retrospect.
@@ -26,7 +26,7 @@ issues with connectivity. Doesn't resume sessions.
 Client handle management can be improved.
 
 Client design:
-The client side leaves dormant threads under specific circumstances,
+The client side leaves dormant threads under very specific circumstances,
 issue needs addressing.
 Refactoring of the client has been deemed viable and necessary
 but not in the near future.

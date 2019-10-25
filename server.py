@@ -9,7 +9,7 @@ def accept_connection(ID):
     print(f"Waiting for Player {ID}...")
 
     (CLIENT, (IP, PORT)) = s.accept()
-    print ("Received connection from:", IP, "source port number:", PORT, "ID:", ID)
+    print (f'Incoming Connection: {IP}:{PORT} | ID: {ID}\n')
     CLIENT.send(f'NO{ID}'.encode())
 
     return (ID, CLIENT)
